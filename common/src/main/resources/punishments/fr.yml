@@ -144,6 +144,16 @@ Punishments:
     commands:
       - "20:40 [alert]"
       - "20:40 [log]"
+  CrystalAdvanced:
+    remove-violations-after: 300
+    checks:
+      - "CrystalAdvanced"
+    commands:
+      - "5:3 [alert]"
+      - "5:3 [log]"
+      - "15:10 [webhook]"
+      - "15:10 [proxy]"
+
   MacroBlockPlace:
     remove-violations-after: 300
     checks:
