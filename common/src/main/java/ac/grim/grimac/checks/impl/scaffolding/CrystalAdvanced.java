@@ -19,7 +19,8 @@ import com.github.retrooper.packetevents.wrapper.play.client.WrapperPlayClientPl
  *   - High CPS (above human threshold), AND
  *   - Very low CV (extremely regular, near-zero variance in intervals)
  *
- * Complements CrystalCPS which catches raw speed regardless of regularity.
+ * Replaces the standalone CrystalCPS check; the CPS gate here reduces false positives
+ * by requiring both high speed AND robot-like regularity before flagging.
  */
 @CheckData(name = "CrystalAdvanced",
         description = "Detects crystal macros using CPS + timing consistency",

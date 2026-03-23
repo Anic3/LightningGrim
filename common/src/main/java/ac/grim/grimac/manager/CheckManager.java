@@ -156,7 +156,7 @@ public class CheckManager {
                 .put(CrashH.class, new CrashH(player))
                 .put(CrashI.class, new CrashI(player))
                 .put(MacroBlockPlace.class, new MacroBlockPlace(player))
-                .put(CrystalCPS.class, new CrystalCPS(player))
+                .put(CrystalAdvanced.class, new CrystalAdvanced(player))
                 .put(SetbackBlocker.class, new SetbackBlocker(player)) // Must be last class otherwise we can't check while blocking packets
                 .build();
 
