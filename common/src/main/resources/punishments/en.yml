@@ -163,3 +163,13 @@ Punishments:
       - "5:3 [log]"
       - "15:10 [webhook]"
       - "15:10 [proxy]"
+
+  AutoTotem:
+    remove-violations-after: 300
+    checks:
+      - "AutoTotem"
+    commands:
+      - "3:2 [alert]"
+      - "3:2 [log]"
+      - "10:5 [webhook]"
+      - "10:5 [proxy]"

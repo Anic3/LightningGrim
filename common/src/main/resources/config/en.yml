@@ -203,6 +203,15 @@ CrystalAdvanced:
     # Lower values reduce false positives; 0.15 is safe for most servers
     max-cv: 0.15
 
+# AutoTotem checks detect automated totem re-equip after a totem pops.
+# AutoTotemA checks the F-key swap; AutoTotemB checks inventory click to offhand slot.
+# Both flag if reaction time < player_ping + min-human-reaction-ms.
+AutoTotemA:
+    # Minimum human reaction floor (ms) added on top of round-trip ping.
+    min-human-reaction-ms: 100
+AutoTotemB:
+    min-human-reaction-ms: 100
+
 experimental-checks: false
 
 reset-item-usage-on-item-update: true
